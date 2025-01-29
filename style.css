@@ -1,0 +1,263 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    height: 95%;
+    width: 20rem;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.head {
+    height: 10rem;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    color: white;
+}
+
+.addbar {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+}
+
+.icona {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.addpopup {
+    height: 95%;
+    width: 25rem;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+
+}
+.addpopup button{
+height: 3rem;
+width: 7rem;
+background-color: royalblue;
+border-radius: 25px;
+border: 2px solid snow;
+font-size: large;
+font-weight: bold;
+}
+.Name {
+    height: 2rem;
+    border: 2px solid royalblue;
+    width: 15rem;
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.task {
+    height: 2rem;
+    border: 2px solid royalblue;
+    width: 15rem;
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.numberoftask {
+    height: 2rem;
+    border: 2px solid royalblue;
+    width: 15rem;
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.inputapop {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.task_container {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tasker {
+    padding: 1rem .5rem 1rem .5rem;
+    height: 23rem;
+    width: 100%;
+    background-color: rgb(202, 202, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    gap: .5rem;
+}
+
+.task_viewer {
+    height: calc(100% - 10rem - 3rem);
+    width: 100%;
+    padding: .5rem;
+    background-color: black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.task_list {
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(243, 243, 199);
+    border: 2px solid rosybrown;
+    border-radius: 15px;
+    padding: .4rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    height: 2rem;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+
+}
+
+.namehead {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid rgb(97, 88, 88);
+}
+
+.delete {
+    font-size: larger;
+    font-weight: bold;
+}
+/* For tablets and small screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .screen {
+        width: 18rem;
+    }
+
+    .addpopup {
+        width: 20rem;
+    }
+
+    .Name,
+    .task,
+    .numberoftask {
+        width: 12rem;
+    }
+
+    .tasker {
+        height: 20rem;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .screen {
+        width: 90%;
+    }
+
+    .head {
+        height: 8rem;
+    }
+
+    .addpopup {
+        width: 90%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+
+    .Name,
+    .task,
+    .numberoftask {
+        width: 90%;
+    }
+
+    .task_container {
+        height: auto;
+    }
+
+    .tasker {
+        height: 18rem;
+        padding: 0.5rem;
+    }
+
+    .task_list {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+    }
+}
+
+/* For extra small devices (360px and below) */
+@media screen and (max-width: 360px) {
+    .screen {
+        width: 95%;
+    }
+
+    .addpopup {
+        width: 95%;
+    }
+
+    .task {
+        width: 100%;
+    }
+
+    .tasker {
+        height: 16rem;
+    }
+}
